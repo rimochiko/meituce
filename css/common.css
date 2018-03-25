@@ -1,0 +1,246 @@
+/*重置样式*/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0}
+body,button,input,select,textarea{ font:12px/1.5 "微软雅黑",arial, verdana, sans-serif;color:#565656;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+li{list-style:none}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+button,input,select,textarea{font-size:100%}
+legend{color:#565656;}
+small{font-size:12px}
+input{outline:none;border-radius:3px;}
+textarea{resize:none;outline:none;border-radius:3px;transition:all .2s;}
+textarea:focus{border:1px solid #09F;}
+a{text-decoration:none;color: #383835;transition:all .2s;cursor:pointer;}
+a:hover{text-decoration:none;color:#09c;}
+.clear {clear: both;}
+.container{width:96%;margin:0 auto;}
+body,html{height:100%;}
+img{max-width:200%;}
+
+/*初始化样式*/
+body {
+	min-width: 1200px;
+	background:#F7F8FA;
+}
+/*公共头部header*/
+.header {
+	width:100%;
+	background: #fff;
+	height: 50px;
+	position: fixed;
+	box-shadow:0px 0px 5px #eee;
+	z-index:800;
+}
+
+.header .logo,
+.header .nav,
+.header .search {
+	float: left;
+}
+
+.header .user-btn {
+	float: right;
+}
+
+.header .logo
+{
+	margin-top:9px;
+}
+
+.header .logo a {
+	font-size: 24px;
+}
+
+.header .nav {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.header .nav li {
+	float: left;
+	position:relative;
+}
+
+.header .nav li a {
+	display: block;
+	padding: 0 20px;
+	text-align: center;
+	line-height: 50px;
+	font-size:14px;
+	color:#565656;
+}
+
+.header .sub-nav {
+	position:absolute;
+	background:#FFF;
+	border:1px solid #eee;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	display:none;
+}
+
+.header .nav .sub-nav {
+	width:274px;
+}
+
+.header .user-btn {
+	position:relative;
+}
+
+.header .user-btn .sub-nav {
+	width:120px;
+}
+
+.header .sub-nav li a {
+	color:#565656;
+}
+
+.header .sub-nav li a:hover {
+	color:#09F!important;
+}
+
+.header .user-btn:hover .sub-nav {
+	display:block;
+	top:50px;
+	right:0;
+}
+
+.header .nav li:hover .sub-nav {
+	display:block;
+	top:50px;
+	left: 0;
+}
+
+.header .search {
+	position: relative;
+	display:block;
+}
+
+.header .search .search-text {
+	width: 240px;
+	margin-top: 10px;
+	height: 20px;
+	border-radius: 10px;
+	outline: none;
+	background: #F7F8FA;
+	border: 1px solid #ddd;
+	padding: 4px 40px 4px 10px;
+	transition:all .2s;
+	color:#775555;
+}
+
+.header .search .search-text:focus {
+	background:#fff;
+}
+
+.header .search .search-btn {
+	position: absolute;
+	right: 12px;
+	top: 17px;
+	background: url(../images/search.gif) no-repeat;
+	background-size: 100%;
+	border: none;
+	width:16px;
+	height:16px;
+	outline:none;
+	cursor:pointer;
+}
+
+
+.header .user-btn a {
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	float: left;
+	color:#565656;
+}
+
+.header .user-btn .sub-nav a { 
+	padding: 0 30px;
+}
+
+.header .user-btn .login {
+	background: #fff;
+	color:#565656;
+	padding: 0 30px;
+}
+
+.header .user-btn .register {
+	background: #41CB2D;
+	color: #fff;
+	padding: 0 30px;
+}
+
+.caret {
+	width:0;
+	height:0;
+	content:'';
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #565656;
+	display:block;
+	margin-top:22px;
+	margin-left:6px;
+	float:right;
+}
+
+.more-btn,.confirm-btn {
+	background:#41BE37;
+	color:#fff;
+	display:block;
+	border-radius:3px;
+	padding:4px 0px;
+	text-align:center;
+	border:none;
+}
+
+.more-btn {
+	width:150px;
+	text-align:center;
+	font-size:16px;
+	margin:20px auto;
+	transition:all .2s;
+}
+
+.more-btn:hover,.confirm-btn:hover {
+	background:#41CB2D;
+	color:#fff;
+}
+
+.center {
+	position:absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.page-btn {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.page-btn li {
+	margin: 0 auto;
+	display: inline-block;
+
+}
+
+.page-btn li a {
+	padding: 4px 10px;
+	background:#41BE37;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.page-btn li .active {
+	background: none;
+	color: #41BE37;
+}
